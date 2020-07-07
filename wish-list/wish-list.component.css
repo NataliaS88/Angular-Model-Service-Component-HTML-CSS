@@ -1,0 +1,17 @@
+th{
+    text-align: center;
+}
+td{
+    color: teal;
+    background-color: bisque;
+}
+
+.head {
+    color:rosybrown;
+    background-color: bisque;
+}
+button{
+  color: brown;
+  border: 2px solid  violet;
+}
+

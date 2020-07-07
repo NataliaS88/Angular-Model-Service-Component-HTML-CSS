@@ -1,0 +1,23 @@
+input[type=checkbox]:checked+a.nameOfItem {
+    text-decoration: line-through;
+  pointer-events: none;
+}
+
+.nameOfItem{
+    text-align: end;
+}
+div{
+    background-color: whitesmoke;
+}
+a{
+    text-align: end;
+    color: brown;
+}
+button{
+    color: brown;
+    border: 2px solid  violet;
+
+
+}
+
+

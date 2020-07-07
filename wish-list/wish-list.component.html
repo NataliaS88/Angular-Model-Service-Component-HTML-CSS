@@ -1,0 +1,39 @@
+<div>
+    <table class="table">
+        <thead *ngIf='existItems&&existItems.length'>
+            <tr>
+                <div class="head" >
+                    <th style="width: 35px">Check</th>
+                    <th style="width: 450px">Name for link</th>
+                    <th style="width: 115px">Delete item</th>
+                </div>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <app-wish-list-item *ngFor='let item of existItems' [item]="item">
+                </app-wish-list-item>
+            </tr>
+        </tbody>
+
+        <tfoot >
+            <tr>
+                <td>
+                    <div  >
+                        <input style="width: 620px" type="text" #aaa [(ngModel)]='newItemName'
+                            placeholder={{defaulttext}} />
+                    </div>
+                    <div class="foot">
+                        <input style="width: 620px" type="url" #bbb value={{newItemURL}} [(ngModel)]='newItemURL'
+                            placeholder={{defaultlink}} />
+                    </div>
+                    <div class="foot">
+                        <button class="btnAdd" style="width: 100px"
+                            (click)="addToListClick(aaa.value,bbb.value)">Add</button>
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
